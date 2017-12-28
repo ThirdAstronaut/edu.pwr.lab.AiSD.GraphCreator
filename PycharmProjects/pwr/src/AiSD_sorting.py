@@ -1,24 +1,11 @@
 from matplotlib import animation
 from pylab import *
 
-##file = open('C:/Users/Rafał/IdeaProjects/SortingAlghoritms_AiSD/results.txt')
-"""
-with open('C:/Users/Rafał/IdeaProjects/SortingAlghoritms_AiSD/test.txt') as f:
-
-    array = [[int(x) for x in line.split("/")] for line in f]
-title("sorting alghoritms")
-plot(1, 2, 3, 4, 'r', label="shell sort")
-legend(loc='upper right')
-savefig('graph1.png')
-
-"""
-
-theFile = open("C:/Users/Rafał/IdeaProjects/SortingAlghoritms_AiSD/values.txt", "r")
+theFile = open("MY_PATH", "r")
 theInts = []
 for val in theFile.read().split("/"):
     theInts.append(int(val))
 theFile.close()
-
 
 title("sorting alghoritms")
 plot(theInts, 'r', label="shell sort")
@@ -28,32 +15,10 @@ plot( nums,'b', label="library sort")
 plot(rands, 'g', label="quick sort")
 legend(loc='upper right')
 
-
 savefig('graph1.png')
 
-
-
-
-
-
-
 """
-
-
-values = []
-for line in file:
-    fields = line.strip().split("/")
-
-    #for nums in range(len(fields)):
-  #      values = fields[nums]
-    title("sorting alghoritms")
-    plot(1,2,3,4,'r', label = "shell sort")
-    legend(loc='upper right')
-    savefig('graph1.png')
-"""
-
-
-""" 'r' = red
+'r' = red
  'g' = green
  'b' = blue
  'c' = cyan
@@ -68,52 +33,47 @@ for line in file:
  '-.' = dot-dashed
  '.' = points
  'o' = filled circles
- '^' = filled triangles"""
+ '^' = filled triangles
+"""
 
+"""
+with open('MY_PATH') as f:
 
+array = [[int(x) for x in line.split("/")] for line in f]
+title("sorting alghoritms")
+plot(1, 2, 3, 4, 'r', label="shell sort")
+legend(loc='upper right')
+savefig('graph1.png')
 
+"""
+"""
+values = []
+for line in file:
+    fields = line.strip().split("/")
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    #for nums in range(len(fields)):
+  #      values = fields[nums]
+    title("sorting alghoritms")
+    plot(1,2,3,4,'r', label = "shell sort")
+    legend(loc='upper right')
+    savefig('graph1.png')
+"""
 
 """
     text_file = open("filename.dat", "r")
-
     print
     lines
     print
     len(lines)
     text_file.close()
-
-
-
-
-
-
-    """
+"""
 
 """
-    filename = "C:/Users/Rafał/IdeaProjects/SortingAlghoritms_AiSD/results.txt"
+    filename = "MY_PATH"
     values = []
     with open(filename) as f:
         for line in f:
             values.append([int(n) for n in line.sptrip().split("/")])
             for num in values:
             plot([values[num]])
-           """
+"""
